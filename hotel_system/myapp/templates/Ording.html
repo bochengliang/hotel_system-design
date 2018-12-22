@@ -1,0 +1,82 @@
+	<!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/html">
+	<head>
+			<title>Ording Page</title>
+			<!-- for-mobile-apps -->
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+			<meta name="keywords" content="Elite Furniture Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+			Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+			<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+					function hideURLbar(){ window.scrollTo(0,1); } </script>
+			<!-- //for-mobile-apps -->
+			<link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+			<link href="/static/css/style.css" rel="stylesheet" type="text/css" media="all" />
+			<!-- js -->
+			<script src="/static/js/jquery-1.11.1.min.js"></script>
+			<!-- //js -->
+			<!-- start-smoth-scrolling -->
+			<script type="text/javascript" src="/static/js/move-top.js"></script>
+			<script type="text/javascript" src="/static/js/easing.js"></script>
+			<script type="text/javascript">
+				jQuery(document).ready(function($) {
+					$(".scroll").click(function(event){
+						event.preventDefault();
+						$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+					});
+				});
+
+			</script>
+
+
+<!-- start-smoth-scrolling -->
+<!-- menu -->
+			<link href="/static/css/component.css" rel="stylesheet" type="text/css"  />
+			<!-- //menu -->
+			<link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,900,800' rel='stylesheet' type='text/css'>
+			<link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+			<style>
+
+
+            *{margin:0;padding:0}
+            .absoluteCenter{ width:600px; height:400px;position:absolute; background: rgb(255,255,255); left:50%; top:50%; margin-left: -300px; margin-top: -200px;  }
+
+			.father{position:fixed;width:100%;height:100%;top;0;left:0;background-color:rgba(0,0,0,.7);}
+			.son{position: absolute;top:0;left:0;bottom:0;right:0;width:50%;height:50%;margin:auto;background-color:red;}
+</style>
+	</head>
+
+	<body>
+		   <script language="javascript">
+                        function SuccessMsgBox() //声明标识符
+                        {
+                        alert("预定成功，即将进入主页面！如果未跳转，请重新核实您的信息!"); //弹出对话框
+                        }
+
+						function FailedMsgBox() //声明标识符
+                        {
+                        alert("预定失败，请预定其它房型！由于房间已经饱满，很抱歉!"); //弹出对话框
+                        }
+
+           </script>
+
+			<div class="absoluteCenter">
+					<!--<h3 style=""> Ording page !</h3>-->
+					<h3 style=""> Welcome to Ording Page !</h3>
+					<div class="table-form">
+						<form action= "add/" method="post" >
+							 {% csrf_token %}
+							<input type="text" name="username" value="Name" placeholder="Name" >
+							<input type="text" name='id_card' value="idcard"  placeholder="idcard"  pattern="(^\d{15}$)|(^\d{17}([0-9]|X)$)" title="请输入正确的身份证号码！">
+							<input type="text" name='number' value="Phone number" placeholder="Phone number" pattern="^1[34578]\d{9}$" title="请输入正确的手机号！"/>
+
+							<input type="submit" value="Ording" onclick="{{message}}">
+						</form>
+					</div>
+				</div>
+
+
+	</body>
+	</html>
+
+	

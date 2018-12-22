@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Sunshine Holiday Hotel </title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Elite Furniture Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/static/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script src="/static/js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="/static/js/move-top.js"></script>
+<script type="text/javascript" src="/static/js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<!-- menu -->
+<link href="/static/css/component.css" rel="stylesheet" type="text/css"  />
+<!-- //menu --><link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,900,800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+	    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .drop-box {
+            box-sizing: border-box;
+            width: 150px;
+            font-size: 14px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.175);
+            overflow: hidden;
+            margin-bottom: 5px;
+        }
+
+        .drop-box p {
+            height: 24px;
+            padding-top: 5px;
+            position: relative;
+            z-index: 10;
+            margin: 0px;
+        }
+
+        .drop-box p:after {     /*三角箭头*/
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 0px;
+            height: 0px;
+            content: '';
+            border: 6px solid transparent;
+            border-top-color: #E4E4E3;
+        }
+
+        .drop-box .menu {
+            display: none;
+            background-color: #fff;
+        }
+
+        .drop-box .menu li {
+            height: 35px;
+            line-height: 35px;
+        }
+
+        .drop-box .menu li:hover {
+            background-color: #fee5ca;
+            color: #fda653;
+        }
+
+        .drop-box .menu .dp-active {
+            display: none;
+        }
+
+        .drop-box:hover {
+            cursor: pointer;
+        }
+
+        .drop-box:hover .menu {
+            display: block;
+        }
+
+        .drop-box:hover p:after {
+            top: 5px;
+            border: 6px solid transparent;
+            border-bottom-color: #E4E4E3;
+        }
+
+    </style>
+</head>
+
+<body class="cbp-spmenu-push">
+<!-- banner -->
+	<div class="banner1">
+		<div class="header">
+			<div class="top-nav">
+                		<div class="drop-box">
+						<h2 class="txt">Menu</h2>
+						<ul class="menu">
+							<li><a href="index/">Home</a></li>
+							<li><a href="services/">Order</a></li>
+							<li class="active"><a href="single/">Comment</a></li>
+							<li class="active"><a href="admin/">Admin</a></li>
+						</ul>
+					</div>
+
+				<!--<div class="main buttonset">-->
+						<!--&lt;!&ndash; Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body &ndash;&gt;-->
+						<!--<button id="showRightPush">Menu</button>-->
+						<!--&lt;!&ndash;<span class="menu"></span>&ndash;&gt;-->
+				<!--</div>-->
+				<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+				<script src="/static/js/classie.js"></script>
+				<script>
+				var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+				showRightPush = document.getElementById( 'showRightPush' ),
+				body = document.body;
+
+				showRightPush.onclick = function() {
+					classie.toggle( this, 'active' );
+					classie.toggle( body, 'cbp-spmenu-push-toleft' );
+					classie.toggle( menuRight, 'cbp-spmenu-open' );
+					disableOther( 'showRightPush' );
+				};
+
+				function disableOther( button ) {
+					if( button !== 'showRightPush' ) {
+						classie.toggle( showRightPush, 'disabled' );
+					}
+				}
+				</script>
+			</div>
+			<div class="logo">
+				<a href="index.html"> Sunshine Holiday Hotel</a>
+			</div>
+			<div class="logo-right">
+				<p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>Contact Us : 0678 906 890</p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //banner -->
+<!-- single -->
+	<div class="single">
+		<div class="container">
+			<div class="single-page-artical">
+				<div class="comment-grid-top">
+					<h3>Comments</h3>
+					<div class="comments-top-top">
+						<!--<div class="top-comment-left">-->
+							<!--&lt;!&ndash;<a href="#"><img class="img-responsive" src="/static/images/co.png" alt=""></a>&ndash;&gt;-->
+						<!--</div>-->
+                        {% if comments %}
+                           {% for comment in comments %}
+						<div class="top-comment-right">
+							<ul>
+                                <li><span class="left-at"><a href="#">{{comment.Name}}</a></span></li>
+								<li><span class="right-at">{{comment.pub_date}}</span></li>
+								<li><a class="reply" href="#">Reply</a></li>
+							</ul>
+						<p> {{comment.Message}}</p>
+
+						</div>
+                         {% endfor %}
+
+                        {% else %}
+                             <tr>
+                                <td colspan="4">无数据</td>
+                            </tr>
+                        {% endif %}
+
+
+                  <ul class="pagination">
+                      <li><a href="single/?page=1">首页</a></li>
+                             {% if comment.has_previous %}
+                      <li><a href="single/?page={{ comment.previous_page_number }}">上一页</a></li>
+                             {% endif %}
+                        {% for num in comments.paginator.page_range %}
+                      <li><a href="single/?page={{ num }}">{{ num }}</a></li>
+                             {% endfor %}
+                            {% if comment.has_next %}
+                      <li><a href="single/?page={{ comment.next_page_number }}">下一页</a></li>
+                            {% endif %}
+                      <li><a href="single/?page={{ comments.paginator.num_pages }}">尾页</a></li>
+                  </ul>
+
+						<div class="clearfix"> </div>
+
+
+                    </div>
+
+            </div>
+
+
+				<div class="artical-commentbox">
+					<h3>leave a comment</h3>
+					<div class="table-form">
+						<form action="add/comment/" method="post">
+							<input type="text" value="Name"  name="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+							<input type="email" value="Email" name="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+							<input type="text" value="Phone number" name="Phone number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone number';}">
+							<textarea value="Message" name="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
+							<input type="submit" value="Send">
+						</form>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+
+
+    </div>
+<!-- single -->
+ 
+<!-- //footer -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+
+</body>
+</html>
